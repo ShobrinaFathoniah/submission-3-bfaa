@@ -15,7 +15,7 @@ class FollowersViewModel : ViewModel() {
 
     fun getUserFollowers(username: String) {
         ApiClient.instance
-                .getFollowersUser(username, "5b9178222bb5c0b32a10711743dcf46ad0c534a6")
+                .getFollowersUser(username, "TOKEN GITHUB")
                 .enqueue(object : Callback<ArrayList<MiniUserModel>> {
                     override fun onResponse(
                             call: Call<ArrayList<MiniUserModel>>,
