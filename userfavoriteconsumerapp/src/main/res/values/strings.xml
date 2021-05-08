@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">User Favorite Consumer App</string>
+    <string name="message_no_data">There is no Data For Now</string>
+    <string name="welcome_in_consumer_app">Hello This is ConsumerApp Favorite User</string>
+    <string name="user_username">username</string>
+</resources>
