@@ -15,7 +15,7 @@ class FollowingViewModel : ViewModel() {
 
     fun getUserFollowing(username: String) {
         ApiClient.instance
-                .getFollowingUser(username, "5b9178222bb5c0b32a10711743dcf46ad0c534a6")
+                .getFollowingUser(username, "TOKEN GITHUB")
                 .enqueue(object : Callback<ArrayList<MiniUserModel>> {
                     override fun onResponse(
                             call: Call<ArrayList<MiniUserModel>>,
