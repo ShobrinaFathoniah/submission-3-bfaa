@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Cari</string>
+    <string name="search_hint">Pencarian</string>
+    <string name="user_name">Nama</string>
+    <string name="company">Perusahaan</string>
+    <string name="follow">Follow</string>
+    <string name="share">Share</string>
+    <string name="location">Lokasi</string>
+    <string name="repository">Repositori</string>
+    <string name="settingLanguage">Pengaturan Bahasa</string>
+    <string name="message_no_data">Tidak ada data saat ini</string>
+    <string name="alarm_on">Alarm dinyalakan</string>
+    <string name="alarm_off">Alarm dimatikan</string>
+    <string name="reminder">Pengingat</string>
+    <string name="search_image">Cari Pengguna Github Kesukaanmu di Toolbar</string>
+    <string name="list_user_favorite">List User Favorite</string>
+</resources>

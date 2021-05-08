@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:icon="@drawable/ic_baseline_alarm_24"
+        android:key="@string/sp_key_on_off_random_color"
+        android:title="@string/alarm" />
+</PreferenceScreen>

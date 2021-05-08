@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/details"
+            style="@style/Table.UserDetails"
+            android:layout_below="@+id/photo"
+            android:layout_centerInParent="true">
+
+            <TableRow android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    style="@style/Font.Main"
+                    android:text="@string/user_name" />
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    style="@style/Font.Second"
+                    android:text="@string/user_username" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/button"
+            style="@style/Table.UserDetails"
+            android:layout_below="@+id/details">
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_follow"
+                    style="@style/Button.Follow"
+                    android:text="@string/follow" />
+
+                <Button
+                    android:id="@+id/btn_share"
+                    style="@style/Button.Share"
+                    android:text="@string/share" />
+
+                <ToggleButton
+                    android:id="@+id/favorite_toogle"
+                    android:layout_width="38dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/favorite_toogle"
+                    android:textOff=""
+                    android:textOn="" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/repository"
+            style="@style/Table.UserDetails"
+            android:layout_below="@+id/button">
+
+            <TableRow android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_repository"
+                    style="@style/Font.First"
+                    android:text="@string/repository" />
+
+                <TextView
+                    style="@style/Font.Second.UD"
+                    android:text="@string/repository" />
+
+                <TextView
+                    android:id="@+id/txt_followers"
+                    style="@style/Font.First"
+                    android:text="@string/followers" />
+
+                <TextView
+                    style="@style/Font.Second.UD"
+                    android:text="@string/followers" />
+
+                <TextView
+                    android:id="@+id/txt_following"
+                    style="@style/Font.First"
+                    android:text="@string/following" />
+
+                <TextView
+                    style="@style/Font.Second.UD"
+                    android:text="@string/following" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/location"
+            style="@style/Table.UserDetails"
+            android:layout_below="@+id/repository">
+
+            <TableRow android:gravity="center">
+
+                <TextView
+                    style="@style/Font.First"
+                    android:text="@string/company" />
+
+                <TextView
+                    android:id="@+id/txt_company"
+                    style="@style/Font.Second.Bold"
+                    android:text="@string/company" />
+
+                <TextView
+                    style="@style/Font.First"
+                    android:text="@string/location" />
+
+                <TextView
+                    android:id="@+id/txt_location"
+                    style="@style/Font.Second.Bold"
+                    android:text="@string/location" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">Github Users</string>
+    <string name="desc_image_ss" translatable="false">Github User</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search Hint</string>
+    <string name="user_username" translatable="false">username</string>
+    <string name="followers" translatable="false">Followers</string>
+    <string name="following" translatable="false">Following</string>
+    <string name="user_name">Name</string>
+    <string name="company">Company</string>
+    <string name="follow">Follow</string>
+    <string name="share">Share</string>
+    <string name="location">Location</string>
+    <string name="repository">Repository</string>
+    <string name="settingLanguage">Language Setting</string>
+    <string name="sp_key_on_off_random_color" translatable="false">key_on_off</string>
+    <string name="alarm" translatable="false">Alarm</string>
+    <string name="message_no_data">There is no Data For Now</string>
+    <string name="listFav" translatable="false">List Favorite User</string>
+    <string name="alarm_on">Alarm set up</string>
+    <string name="alarm_off">Alarm is off</string>
+    <string name="reminder">Reminder</string>
+    <string name="search_image">Search Your Favourite User\'s Github in The Toolbar</string>
+    <string name="list_user_favorite">List User Favorite</string>
+</resources>
