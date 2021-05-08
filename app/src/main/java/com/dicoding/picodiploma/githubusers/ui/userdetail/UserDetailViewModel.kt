@@ -15,7 +15,7 @@ class UserDetailViewModel(application: Application) : AndroidViewModel(applicati
 
     fun getUserDetail(username: String) {
         ApiClient.instance
-                .getDetailUser(username, "5b9178222bb5c0b32a10711743dcf46ad0c534a6")
+                .getDetailUser(username, "TOKEN_GITHUB")
                 .enqueue(object : Callback<UserDetailModel> {
                     override fun onResponse(
                             call: Call<UserDetailModel>,
