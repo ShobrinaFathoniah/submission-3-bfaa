@@ -15,7 +15,7 @@ class UserViewModel : ViewModel() {
 
     fun getQuery(query: String) {
         ApiClient.instance
-                .getSearch(query, "5b9178222bb5c0b32a10711743dcf46ad0c534a6")
+                .getSearch(query, "TOKEN GITHUB")
                 .enqueue(object : Callback<SearchResponse> {
                     override fun onResponse(
                             call: Call<SearchResponse>,
